@@ -46,11 +46,11 @@ app.get("/robot", (request, response) => {
 });
 
 // Launch express server
-var  port  = 3000;
+var  port  = 8000;
 const server = createServer(app);
 const io = require('socket.io')(server,options)
 io.on('connection', function (socket){
-  console.log('connected dfdf ')
+  console.log('connected  ')
   io.emit('user', {name: 'Marcelo Aires'});
 
     //logger.info('SocketIO > Connected socket ' + socket.id);
